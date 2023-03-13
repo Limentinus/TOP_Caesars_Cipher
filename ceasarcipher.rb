@@ -15,6 +15,7 @@ def caesar_cipher(words, shift_factor)
     cipher = shifted_numbers.map {|nums| nums.chr}.join("")
     puts "'#{words}' shifted by #{shift_factor} is"
     puts cipher
+    cipher
 end
 
-caesar_cipher("This is a TEST. IT WORKS!", 6)
+# caesar_cipher("This is a TEST. IT WORKS!", 6)
