@@ -12,4 +12,8 @@ describe "#caesar_cipher" do
   it "returns punctuation unaltered" do
     expect(caesar_cipher(".,?", 1)).to eql(".,?")
   end
+
+  it "returns a sentence with uppercase and lowercase characters shifted by 8" do
+    expect(caesar_cipher("This is a TEST. IT WORKS!", 8)).to eql("Bpqa qa i BMAB. QB EWZSA!")
+  end
 end
